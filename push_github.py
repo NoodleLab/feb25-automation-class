@@ -60,16 +60,21 @@ def find_and_click_text(target_text, double_click=False):
 
 def select_repo(repo_name):
     time.sleep(5)
-    #find_and_click_text("Current")
-    pyautogui.click(100, 100)
+    #maximize screen
+    pyautogui.hotkey('ctrl', 'command', 'F')
+    time.sleep(5)
+    #find_and_click_text("Current")     
+    pyautogui.click(100, 80)
     pyautogui.write(repo_name)
     pyautogui.press('enter')
-    time.sleep(5)
-    pyautogui.click(100, 750)
+    time.sleep(2)
+    pyautogui.click(100, 730)
     pyautogui.write("hi")
     pyautogui.click(100, 900)
 
-
+print("about to open git_hub_desktop")
 
 open_github_desktop()
+print("selecting repo")
+
 select_repo("feb25-automation-class")
