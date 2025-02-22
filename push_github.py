@@ -71,6 +71,8 @@ def select_repo(repo_name):
     pyautogui.click(100, 730)
     pyautogui.write("hi")
     pyautogui.click(100, 900)
+    #click the push origin button
+    pyautogui.click(1000, 330)
 
 print("about to open git_hub_desktop")
 
