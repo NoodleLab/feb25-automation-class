@@ -61,8 +61,8 @@ def find_and_click_text(target_text, double_click=False):
 def select_repo(repo_name):
     time.sleep(5)
     #maximize screen
-    pyautogui.hotkey('ctrl', 'command', 'F')
-    time.sleep(5)
+    pyautogui.hotkey('command', 'control', 'F')
+    time.sleep(2)
     #find_and_click_text("Current")     
     pyautogui.click(100, 80)
     pyautogui.write(repo_name)
