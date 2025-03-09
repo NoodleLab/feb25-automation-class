@@ -61,7 +61,16 @@ def find_and_click_text(target_text, double_click=False):
 def select_repo(repo_name):
     time.sleep(5)
     #maximize screen
-    pyautogui.hotkey('command', 'control', 'F')
+    #v=pyautogui.hotkey('command','control','F')
+    #print(v)
+    
+    #icon_location = pyautogui.locateOnScreen('maxi_icon.png')
+    #icon_center = pyautogui.center(icon_location)
+    #print(icon_center)
+    #pyautogui.click('maxi_icon.png')
+
+    #pyautogui.click('calc7key.png')
+
     time.sleep(2)
     #find_and_click_text("Current")     
     pyautogui.click(100, 80)
@@ -70,9 +79,9 @@ def select_repo(repo_name):
     time.sleep(2)
     pyautogui.click(100, 730)
     pyautogui.write("hi")
-    pyautogui.click(100, 900)
+    pyautogui.click(100, 895)
     #click the push origin button
-    pyautogui.click(1080, 280)
+    pyautogui.click(1080, 307)
 
 print("about to open git_hub_desktop")
 
